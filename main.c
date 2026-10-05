@@ -2,21 +2,14 @@
 
 int main() {
 
-    float dinheiro, valor, troco;
+    int soma = 0;
 
-    printf("Valor entregue pelo cliente: $");
-    scanf("%f",&dinheiro);
-
-    printf("Valor do produto: $");
-    scanf("%f", &valor);
-
-    troco = (dinheiro - valor);
-
-    if(troco >= 0){
-        printf("Devolva:%.2f$", troco);
-    }else{
-        printf("Valor insuficiente!!!");
+    for(int i = 1; i <= 10; i++){
+        
+        
+        printf("%d + %d = %d\n",soma,i, soma + i);
+        soma = soma + i;
     }
-
+    
     return 0;
 }
