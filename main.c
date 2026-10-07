@@ -2,14 +2,14 @@
 
 int main() {
 
-    int soma = 0;
-
-    for(int i = 1; i <= 10; i++){
-        
-        
-        printf("%d + %d = %d\n",soma,i, soma + i);
-        soma = soma + i;
-    }
+    int numero = -5;
+if ( > 0){
+    printf("Positivo");
+}if else( < 0){
+    printf("Negativo");
+} else {
+    printf("Zero");
+}
     
     return 0;
 }
