@@ -2,18 +2,9 @@
 
 int main() {
 
-   int operacao = 3;
-int a = 10, b = 5;
-switch (operacao) {
-    case 1:
-        printf("%d", a + b);
-        break;
-    case 2:
-        printf("%d", a - b);
-        break;
-    case 3:
-        printf("%d", a * b);
-        break; 
+   int i;
+for (i = 1; i <= 10; i++) {
+    printf("%d\n", i);
 }
     return 0;
 }
