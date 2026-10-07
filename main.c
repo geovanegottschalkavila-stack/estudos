@@ -3,8 +3,10 @@
 int main() {
 
 int i;
-for(i = 5; i >= 0; i--) {
-    printf("%d\n", i);
+for (i = 1; i <= 20; i++) {
+    if (i % 2 == 0) {
+        printf("%d ", i);
+    }
 }
 
     return 0;
