@@ -3,9 +3,19 @@
 int main() {
 
 int i;
-for (i = 1; i <= 20; i++) {
-    if (i % 2 == 0) {
-        printf("%d ", i);
+for (i = 1; i <= 5; i++) {
+    switch (i) {
+        case 1:
+        case 2:
+            printf("Pequeno\n");
+            break; 
+        case 3:
+        case 4:
+            printf("Medio\n");
+            break;
+        case 5:
+            printf("Grande\n");
+            break;
     }
 }
 
