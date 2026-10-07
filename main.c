@@ -2,28 +2,18 @@
 
 int main() {
 
-   int dia = 3;
-switch (dia) {
+   int operacao = 3;
+int a = 10, b = 5;
+switch (operacao) {
     case 1:
-        printf("Segunda-feira");
-        break; 
+        printf("%d", a + b);
+        break;
     case 2:
-        printf("Terça-feira");
+        printf("%d", a - b);
         break;
     case 3:
-        printf("Quarta-feira"); 
-        break;
-    case 4:
-        printf("Quinta feira");
-        break;
-    case 5:
-        printf("Sexta-feira");
-        break;
-    case 6:
-        printf("Sabado!!");
-        break;
-    case 7:
-        printf("Domingo");
+        printf("%d", a * b);
+        break; 
 }
     return 0;
 }
