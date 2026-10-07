@@ -2,12 +2,11 @@
 
 int main() {
 
-    int idade = 17;
-if (idade >= 18) {
-    printf("Maior de idade");
-} else if (idade <= 18) {
-    printf("Menor de idade");
+    int x = 7;
+if (x >= 1 && x <= 10) {
+    printf("Dentro do intervalo");
+} else {
+    printf("Fora do intervalo");
 }
-
     return 0;
 }
