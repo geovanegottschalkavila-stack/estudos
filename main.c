@@ -2,13 +2,10 @@
 
 int main() {
 
-int soma = 0;
 int i;
-for (i = 1;i <= 10;i++) {
-    soma = soma + i;
+for(i = 5; i >= 0; i--) {
+    printf("%d\n", i);
 }
-printf("%d", soma);
-
 
     return 0;
 }
