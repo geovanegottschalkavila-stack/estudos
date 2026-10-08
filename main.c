@@ -1,23 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
 
 int main() {
 
-int i;
-for (i = 1; i <= 5; i++) {
-    switch (i) {
-        case 1:
-        case 2:
-            printf("Pequeno\n");
-            break; 
-        case 3:
-        case 4:
-            printf("Medio\n");
-            break;
-        case 5:
-            printf("Grande\n");
-            break;
+    int vetor[5] = {1, 2, 3, 4, 5}, i;
+
+    //imprimindo os valores do vetor
+        printf("Valores do vetor: ");
+    for(i = 0; i < 5; i++){
+        printf("%d\n", vetor[i]);
     }
-}
 
     return 0;
 }
