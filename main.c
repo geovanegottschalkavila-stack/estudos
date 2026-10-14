@@ -4,13 +4,14 @@
 
 int main() {
 
-    int vetor[5] = {1, 2, 3, 4, 5}, i;
-
-    //imprimindo os valores do vetor
-        printf("Valores do vetor: ");
-    for(i = 0; i < 5; i++){
-        printf("%d\n", vetor[i]);
-    }
+   int numero = -5;
+if (numero > 0) {
+    printf("Positivo");
+}else if(numero < 0) {
+    printf("Negativo");
+} else {
+    printf("Zero");
+}
 
     return 0;
 }
