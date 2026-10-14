@@ -4,14 +4,11 @@
 
 int main() {
 
-   int numero = -5;
-if (numero > 0) {
-    printf("Positivo");
-}else if(numero < 0) {
-    printf("Negativo");
+   int idade = 17;
+if (idade >= 18) {
+    printf("Maior de idade");
 } else {
-    printf("Zero");
+    printf("Menor de idade");
 }
-
     return 0;
 }
