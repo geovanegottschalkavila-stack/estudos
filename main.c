@@ -6,11 +6,21 @@
    int main() {
     SetConsoleOutputCP(65001);
     
-    int n;
-    scanf("%d", &n);
-    for(int i = 1; i <= 10; i++){
-        printf("%d x %d = %d\n", n, i, n * i);
-    }
+    float a, b, c;
+    float media;
+
+    printf("Digite anota do aluno a: ");
+    scanf("%f", &a);
     
+    printf("Digite a nota do aluno b: ");
+    scanf("%f", &b);
+
+    printf("Digite a nota do aluno c: ");
+    scanf("%f", &c);
+
+    media = (a + b + c) / 3;
+
+    printf("O valor da Média Geral é:%.2f", media);
+
     return 0;
 }
