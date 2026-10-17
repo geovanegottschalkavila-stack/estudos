@@ -6,21 +6,17 @@
    int main() {
     SetConsoleOutputCP(65001);
     
-    float a, b, c;
-    float media;
+    float saldo = 500, saque;
 
-    printf("Digite anota do aluno a: ");
-    scanf("%f", &a);
-    
-    printf("Digite a nota do aluno b: ");
-    scanf("%f", &b);
+    printf("Quanto você deseja sacar: ");
+    scanf("%f", &saque);
 
-    printf("Digite a nota do aluno c: ");
-    scanf("%f", &c);
-
-    media = (a + b + c) / 3;
-
-    printf("O valor da Média Geral é:%.2f", media);
+    if(saldo < saque){
+       printf("Saldo insuficiente!!");
+    }else{
+       saldo = saldo - saque; // Atualiza o saldo corretamente
+       printf("Saque realizado com sucesso!! seu saldo atual é de: %.2f\n", saldo);
+    }
 
     return 0;
 }
