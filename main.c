@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <locale.h>
 
    int main() {
+    SetConsoleOutputCP(65001);
     
-    int a, b;
-    printf("Digite dois numeros: ");
-    scanf("%d %d", &a, &b);
-
-    if(a > b){
-        printf("O maior e a opçao: a");
-    } else {
-        printf("O maior e a opçao: b");
+    int n;
+    scanf("%d", &n);
+    for(int i = 1; i <= 10; i++){
+        printf("%d x %d = %d\n", n, i, n * i);
     }
     
     return 0;
