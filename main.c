@@ -3,47 +3,31 @@
 #include <windows.h>
 #include <locale.h>
 
+    struct pessoa{
+        char nome[50];
+        int idade;
+        float altura;
+    };
+
    int main() {
     SetConsoleOutputCP(65001);
+
+    struct pessoa p1;
     
-    int voto = 0;
-    int candidatoA = 0;
-    int candidatoB = 0;
+    printf("\n-----------DADOS CADASTRAIS-----------\n");
 
-    do{
-        printf("\n----------votação------------\n");
-        printf("Candidato A = 1\n");
-        printf("Candidato B = 2\n");
-        printf("Digite 0 pra sair\n");
-        printf("Digite seu voto:");
-        scanf("%d", &voto);
-    
-        switch (voto){ //o switch conta a quantidade de votos e adiciona a variavel correspondente
-            
-            case 1:
-            candidatoA++;
-            printf("Você votou no candidato A\n");
-            break;
+    printf("Digite o nome da pessoa:\n");
+    scanf("%s", p1.nome);
 
-            case 2:
-            candidatoB++;
-            printf("Você votou no candidato B\n");
-            break;
+    printf("Digite a idade:\n");
+    scanf("%d", &p1.idade);
 
-            case 0:
-            printf("Programa encerrado!!\n");
-            break;
+    printf("Digite a altura:\n");
+    scanf("%f", &p1.altura);
 
-            default:
-            printf("Voto inválido!!");
-            break;
-        }
-
-    }while(voto != 0);//usado para  repetir o programa varias vezes 
-
-        printf("Votos do candidato A:%d\n", candidatoA);
-        printf("Votos do candidato B:%d\n", candidatoB);
-        printf("Programa encerrado!!");
+    printf("Os dados de %s são:\n",  p1.nome);
+    printf("idadde:%d\n", p1.idade);
+    printf("Aaltura:%.2f\n", p1.altura);
 
     return 0;
 }
